@@ -14,17 +14,6 @@ app.use(express.urlencoded({ extended: true })); // for form data
 app.use("/api/user/", UserRoutes);
 app.use("/api/food/", FoodRoutes);
 
-// error handler
-app.use((err, req, res, next) => {
-  const status = err.status || 500;
-  const message = err.message || "Something went wrong";
-  return res.status(status).json({
-    success: false,
-    status,
-    message,
-  });
-});
-
 app.get("/", async (req, res) => {
   res.status(200).json({
     message: "Hello developers from GFG",
@@ -44,7 +33,7 @@ const connectDB = () => {
 
 const startServer = async () => {
   try {
-    connectDB();
+    await connectDB();
     app.listen(8080, () => console.log("Server started on port 8080"));
   } catch (error) {
     console.log(error);
@@ -52,3 +41,14 @@ const startServer = async () => {
 };
 
 startServer();
+
+// error handler middleware (must be last)
+app.use((err, req, res, next) => {
+  const status = err.status || 500;
+  const message = err.message || "Something went wrong";
+  return res.status(status).json({
+    success: false,
+    status,
+    message,
+  });
+});
