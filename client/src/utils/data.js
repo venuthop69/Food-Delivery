@@ -1,26 +1,26 @@
 export const category = [
   {
-    img: "https://i.pinimg.com/736x/fd/4b/1e/fd4b1e9fbbee80cb8528fea54cddcb50.jpg",
+    img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=500&fit=crop",
     name: "Burgers",
     off: "20-40% OFF",
   },
   {
-    img: "https://img.freepik.com/premium-photo/huge-selection-peeroni-pizza-with-tomato-sauce-sausage-dark-table_124507-61025.jpg",
+    img: "https://images.unsplash.com/photo-1628840042765-356cda07f4ee?w=500&h=500&fit=crop",
     name: "Pizzas",
     off: "10-20% OFF",
   },
   {
-    img: "https://bonmasala.com/wp-content/uploads/2022/10/mutton-biriyani-recipe.jpeg",
+    img: "https://images.unsplash.com/photo-1585238341710-4b8e2cbcd5e0?w=500&h=500&fit=crop",
     name: "Biriyanis",
     off: "20-40% OFF",
   },
   {
-    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Desserts.jpg/520px-Desserts.jpg",
+    img: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=500&h=500&fit=crop",
     name: "Desserts",
     off: "30-40% OFF",
   },
   {
-    img: "https://media.istockphoto.com/id/1366811190/photo/different-type-of-coktails-on-wooden-table.jpg?s=612x612&w=0&k=20&c=BS4lAi77xCxn7LkMleAkw56H-IBaSzE1P2tQuUJcQlQ=",
+    img: "https://images.unsplash.com/photo-1599599810694-b5ac4dd579b7?w=500&h=500&fit=crop",
     name: "Beverages",
     off: "10-40% OFF",
   },
